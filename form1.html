@@ -1,0 +1,133 @@
+<html>
+<head>
+  <title>Profile Setup Form</title>
+</head>
+<body>
+
+  <h1>User Profile Setup Form</h1>
+
+<form>
+
+    <p>
+      <label>Full Name:<br>
+        <input type="text" name="fullname" placeholder="First and lastname" autocomplete="on" required>
+      </label>
+    </p>
+
+    <p>
+      <label>Password:<br>
+        <input type="password" name="password" required>
+      </label>
+    </p>
+
+    <p>
+      <label>Email:<br>
+        <input type="email" name="email" required>
+      </label>
+    </p>
+
+    <p>
+      <label>Phone Number:<br>
+        <input type="tel" name="phone" maxlength="10">
+      </label>
+    </p>
+
+    <p>
+      <label>Website:<br>
+        <input type="url" name="website">
+      </label>
+    </p>
+
+    <p>
+      <label>Search Interests:<br>
+        <input type="search" name="interests">
+      </label>
+    </p>
+
+    <p>
+      <label>Age:<br>
+        <input type="number" name="age" min="18" max="99">
+      </label>
+    </p>
+
+    <p>
+      <label>Experience Level (1–10):<br>
+        <input type="range" name="experience" min="1" max="10">
+      </label>
+    </p>
+
+    <p>
+      <label>Date of Birth:<br>
+        <input type="date" name="dob">
+      </label>
+    </p>
+
+    <p>
+      <label>Month of Joining:<br>
+        <input type="month" name="joining_month">
+      </label>
+    </p>
+
+    <p>
+      <label>Available Week:<br>
+        <input type="week" name="interview_week">
+      </label>
+    </p>
+
+    <p>
+      <label>Interview Time:<br>
+        <input type="time" name="interview_time">
+      </label>
+    </p>
+
+    <p>
+      <label>Interview Slot:<br>
+        <input type="datetime-local" name="interview_slot" readonly >
+      </label>
+    </p>
+
+    <p>
+      <label>Upload Profile Photo:<br>
+        <input type="file" name="profile_photo">
+      </label>
+    </p>
+
+    <p>
+      <label>Skills:<br>
+        <input type="checkbox" name="skill_html" value="HTML"> HTML<br>
+        <input type="checkbox" name="skill_css" value="CSS"> CSS<br>
+        <input type="checkbox" name="skill_js" value="JavaScript"> JavaScript
+      </label>
+    </p>
+
+    <p>
+      <label>Gender:<br>
+        <input type="radio" name="gender" value="male"> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other
+      </label>
+    </p>
+
+    <p>
+      <label>Favorite Color:<br>
+        <input type="color" name="fav_color">
+      </label>
+    </p>
+
+    <!-- Hidden Field -->
+    <input type="hidden" name="ref_code" value="ABC123">
+
+    <p>
+      Submit using image:<br>
+      <input type="image" src="swastika(photo).jpg" width="120" height="120" alt="Submit">
+    </p>
+
+    <p>
+      <input type="submit" value="Submit Form">
+      <input type="reset" value="Reset Form">
+    </p>
+
+  </form>
+
+</body>
+</html>
